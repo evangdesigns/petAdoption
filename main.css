@@ -2,3 +2,75 @@ body {
     background-color:#000000;
     color: #fff;
 }
+button {
+    width:200px;
+    font-size 15pt;
+    border-radius: 2px;
+    padding:10px 5px;
+}
+#petsOcute {
+    display: flex;
+    justify-content: center;
+    flex-flow:row wrap;
+    margin: 0;
+    padding: 0;
+    color:#000;
+    align-items: stretch;
+    
+  }
+.petCard {
+    flex-direction: row;
+    width: 30%;
+    align-content: center;
+    margin: 5px 10px;
+    background-color:#fff;
+    border: 1px solid #000;
+    border-radius:10px;
+    box-shadow: 2px 2px 5px #333;
+}
+
+.petCard h1,
+.petCard h4{
+    text-align: center;
+}
+.petName {
+    background-color:#cccccc;
+    color:#333;
+    padding: 2px 5px;
+    border-radius:10px 10px 0 0;
+}
+.petInfo {
+    padding:15px 0;
+    text-align:center;
+}
+.petDeets h4{
+    margin: 5px 0 2px;
+    line-height: 1em;
+}
+.petDeets p {
+    line-height:1;
+}
+.petInfo img {
+    text-align:center;
+    width:200px;
+    height: 200px;
+}
+.petType {
+    text-transform: uppercase;
+    padding: 2px 2px;
+    border-radius:0 0 10px 10px;
+    bottom: 0;
+}
+.cat, #cat{
+    background-color:lightsalmon;
+    color:#333;
+
+}
+.dog, #dog{
+    background-color: lightskyblue;
+    color:#333;
+}
+.dino, #dino {
+    background-color:lightgreen;
+    color:#333;
+}
