@@ -60,7 +60,7 @@ const printToDom = (divId, textToPrint) => {
                 </div>
                 <div class="petInfo">
                     <center>
-                        <img src="${pet.imageUrl}" alt="${pet.imageAlt}">
+                        <img src="${pet.imageUrl}" alt="${pet.name} the ${pet.type}">
                     </center>
                     <div class="petDeets">
                         <h4>COLOR:</h4>
@@ -91,10 +91,10 @@ const buttonClick = (e) => {
     // pass smaller list of pies back into placePies
     petFilter(selectedPets);
 }
-
-document.getElementById('dog').addEventListener('click', buttonClick)
-document.getElementById('cat').addEventListener('click', buttonClick)
-document.getElementById('dino').addEventListener('click', buttonClick)
-// document.getElementById('all').addEventListener('click', () => {
-//     printToDom('all', pets);
-// };
+petFilter(pets);
+document.getElementById('dog').addEventListener('click', buttonClick);
+document.getElementById('cat').addEventListener('click', buttonClick);
+document.getElementById('dino').addEventListener('click', buttonClick);
+document.getElementById('all').addEventListener('click', () => {
+  petFilter(pets)
+});

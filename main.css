@@ -1,51 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 body {
-    background-color:#000000;
-    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    padding:0; 
+}
+h1 {
+    text-align: center;
 }
 button {
     width:200px;
-    font-size 15pt;
+    font-size: 15pt;
     border-radius: 2px;
     padding:10px 5px;
+    margin:5px;
+}
+#buttons {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color:#cccccc;
+    width:100%;
+    margin:10px;
+    padding:10px;
+
 }
 #petsOcute {
     display: flex;
     justify-content: center;
     flex-flow:row wrap;
-    margin: 0;
+    margin: 50px;
     padding: 0;
     color:#000;
     align-items: stretch;
     
   }
-.petCard {
-    flex-direction: row;
-    width: 30%;
-    align-content: center;
+  .petCard {
+    display: flex;
+    flex-grow: 1;
+    flex: 1 1 30%;
+    flex-direction: column;
+    width: 300px;
+    justify-content: center;
     margin: 5px 10px;
-    background-color:#fff;
-    border: 1px solid #000;
-    border-radius:10px;
-    box-shadow: 2px 2px 5px #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    /*box-shadow: 2px 2px 5px #333;*/
 }
 
 .petCard h1,
 .petCard h4{
     text-align: center;
+    font-weight: bold;
 }
 .petName {
+    flex: none;
     background-color:#cccccc;
     color:#333;
     padding: 2px 5px;
     border-radius:10px 10px 0 0;
 }
 .petInfo {
-    padding:15px 0;
-    text-align:center;
+    flex-grow: 1;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    align-self: flex-end;
+}
+.petDeets {
+    padding: 0 10px;
 }
 .petDeets h4{
-    margin: 5px 0 2px;
+    margin: 5px 0 -10px;
     line-height: 1em;
+    font-weight: bolder;
 }
 .petDeets p {
     line-height:1;
@@ -56,10 +85,11 @@ button {
     height: 200px;
 }
 .petType {
+    flex: none;
     text-transform: uppercase;
     padding: 2px 2px;
     border-radius:0 0 10px 10px;
-    bottom: 0;
+    align-items: flex-end;
 }
 .cat, #cat{
     background-color:lightsalmon;
